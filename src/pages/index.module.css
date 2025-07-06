@@ -5,12 +5,13 @@
 
 /* 主题绿色变量 */
 :root {
-  --primary-green: #4caf50;
-  --light-green: #c8e6c9;
-  --dark-green: #388e3c;
-  --pale-green: #e8f5e9;
-  --accent-green: #00c853;
+  --primary-green: #2e7d32;     /* 主绿色，类似 iPhone 15 主体色 */
+  --light-green: #a5d6a7;       /* 更浅的绿色背景色 */
+  --dark-green: #1b5e20;        /* 稍深一点点，用于悬停或强调 */
+  --pale-green: #dcedc8;        /* 极淡绿色，可作卡片背景 */
+  --accent-green: #00e676;      /* 强调色，适合按钮或小图标 */
 }
+
 
 .heroBanner {
   padding: 4rem 0;
