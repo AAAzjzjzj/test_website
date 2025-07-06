@@ -3,11 +3,21 @@
  * and scoped locally.
  */
 
+/* 主题绿色变量 */
+:root {
+  --primary-green: #4caf50;
+  --light-green: #c8e6c9;
+  --dark-green: #388e3c;
+  --pale-green: #e8f5e9;
+  --accent-green: #00c853;
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, var(--pale-green) 0%, var(--light-green) 100%);
 }
 
 @media screen and (max-width: 996px) {
@@ -20,4 +30,170 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
+}
+
+/* 博客介绍部分 */
+.blogIntro {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blogTitle {
+  color: var(--dark-green);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--light-green);
+  padding-bottom: 1rem;
+}
+
+/* 个人资料部分 */
+.profileSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.avatarWrapper {
+  flex: 0 0 120px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--light-green);
+  background-image: url('/img/logo.svg');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.2);
+}
+
+.bioText {
+  flex: 1;
+  padding-left: 2rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* 分类部分 */
+.categoriesSection {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  color: var(--dark-green);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.sectionTitle::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1.5rem;
+  background-color: var(--primary-green);
+  margin-right: 0.75rem;
+  border-radius: 2px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.categoryItem {
+  padding: 0.5rem 1rem;
+  background-color: var(--pale-green);
+  border-radius: 20px;
+  color: var(--dark-green);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.categoryItem:hover {
+  background-color: var(--primary-green);
+  color: white;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* 最新文章部分 */
+.recentPosts {
+  margin-top: 2rem;
+}
+
+.postList {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.postItem {
+  padding: 1rem;
+  border-left: 3px solid var(--light-green);
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 0 8px 8px 0;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postItem:hover {
+  border-left-color: var(--primary-green);
+  background-color: var(--pale-green);
+  transform: translateX(5px);
+}
+
+.postItem a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.postDate {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+  
+  .profileSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .avatarWrapper {
+    margin-bottom: 1.5rem;
+  }
+  
+  .bioText {
+    padding-left: 0;
+  }
+  
+  .postItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .postDate {
+    margin-top: 0.5rem;
+  }
 }

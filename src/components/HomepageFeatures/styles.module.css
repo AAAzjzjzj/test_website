@@ -3,9 +3,28 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  background-color: rgba(46, 133, 85, 0.05);
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+  fill: #2e8555;
+}
+
+.featureTitle {
+  color: #2e8555;
+  margin-bottom: 1rem;
+}
+
+/* 添加边框效果 */
+.features .col {
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.features .col:hover {
+  box-shadow: 0 8px 24px rgba(46, 133, 85, 0.15);
+  transform: translateY(-5px);
 }
