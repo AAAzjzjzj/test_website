@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title={`我的博客`}
-      description="这是我的个人博客网站，记录我的生活点滴和技术分享">
+      description="这是个人博客网站，记录我的生活点滴和技术分享">
       <HomepageHeader />
       <main>
         <div className="container margin-vert--xl">
@@ -46,7 +46,7 @@ export default function Home() {
                     <div className={styles.avatar}></div>
                   </div>
                   <div className={styles.bioText}>
-                    <p>大家好，这是我的个人博客，我会在这里分享我的学习心得、生活感悟和技术文章。</p>
+                    <p>大家好，这是zjzj的个人博客，我会在这里分享我的学习心得、生活感悟和技术文章。</p>
                     <p>我热爱探索新知识，喜欢记录成长过程中的点点滴滴。希望通过这个博客与更多志同道合的朋友交流。</p>
                   </div>
                 </div>
